@@ -6,14 +6,88 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		005EE1572ECA8612007D4E16 /* ReclaimContentBlocker.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 005EE14E2ECA8612007D4E16 /* ReclaimContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00E500332ECC3B2E00145AF7 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E500322ECC3B2E00145AF7 /* DeviceActivity.framework */; };
+		00E5003B2ECC3B2F00145AF7 /* ReclaimActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 00E500302ECC3B2E00145AF7 /* ReclaimActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		005EE1552ECA8612007D4E16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005EE0812EC90468007D4E16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 005EE14D2ECA8612007D4E16;
+			remoteInfo = ReclaimContentBlocker;
+		};
+		00E500392ECC3B2F00145AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005EE0812EC90468007D4E16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E5002F2ECC3B2E00145AF7;
+			remoteInfo = ReclaimActivityMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		005EE1582ECA8612007D4E16 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				00E5003B2ECC3B2F00145AF7 /* ReclaimActivityMonitor.appex in Embed Foundation Extensions */,
+				005EE1572ECA8612007D4E16 /* ReclaimContentBlocker.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		005EE0892EC90468007D4E16 /* Reclaim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reclaim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		005EE14E2ECA8612007D4E16 /* ReclaimContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReclaimContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E500302ECC3B2E00145AF7 /* ReclaimActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReclaimActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E500322ECC3B2E00145AF7 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		005EE1632ECA8A3B007D4E16 /* Exceptions for "ReclaimContentBlocker" folder in "ReclaimContentBlocker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 005EE14D2ECA8612007D4E16 /* ReclaimContentBlocker */;
+		};
+		00E5003E2ECC3B2F00145AF7 /* Exceptions for "ReclaimActivityMonitor" folder in "ReclaimActivityMonitor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 00E5002F2ECC3B2E00145AF7 /* ReclaimActivityMonitor */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		005EE08B2EC90468007D4E16 /* Reclaim */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Reclaim;
+			sourceTree = "<group>";
+		};
+		005EE14F2ECA8612007D4E16 /* ReclaimContentBlocker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				005EE1632ECA8A3B007D4E16 /* Exceptions for "ReclaimContentBlocker" folder in "ReclaimContentBlocker" target */,
+			);
+			path = ReclaimContentBlocker;
+			sourceTree = "<group>";
+		};
+		00E500342ECC3B2E00145AF7 /* ReclaimActivityMonitor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				00E5003E2ECC3B2F00145AF7 /* Exceptions for "ReclaimActivityMonitor" folder in "ReclaimActivityMonitor" target */,
+			);
+			path = ReclaimActivityMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +100,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		005EE14B2ECA8612007D4E16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E5002D2ECC3B2E00145AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E500332ECC3B2E00145AF7 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				005EE08B2EC90468007D4E16 /* Reclaim */,
+				005EE14F2ECA8612007D4E16 /* ReclaimContentBlocker */,
+				00E500342ECC3B2E00145AF7 /* ReclaimActivityMonitor */,
+				00E500312ECC3B2E00145AF7 /* Frameworks */,
 				005EE08A2EC90468007D4E16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +133,18 @@
 			isa = PBXGroup;
 			children = (
 				005EE0892EC90468007D4E16 /* Reclaim.app */,
+				005EE14E2ECA8612007D4E16 /* ReclaimContentBlocker.appex */,
+				00E500302ECC3B2E00145AF7 /* ReclaimActivityMonitor.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		00E500312ECC3B2E00145AF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00E500322ECC3B2E00145AF7 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +157,13 @@
 				005EE0852EC90468007D4E16 /* Sources */,
 				005EE0862EC90468007D4E16 /* Frameworks */,
 				005EE0872EC90468007D4E16 /* Resources */,
+				005EE1582ECA8612007D4E16 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				005EE1562ECA8612007D4E16 /* PBXTargetDependency */,
+				00E5003A2ECC3B2F00145AF7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				005EE08B2EC90468007D4E16 /* Reclaim */,
@@ -69,6 +174,50 @@
 			productName = Reclaim;
 			productReference = 005EE0892EC90468007D4E16 /* Reclaim.app */;
 			productType = "com.apple.product-type.application";
+		};
+		005EE14D2ECA8612007D4E16 /* ReclaimContentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005EE15C2ECA8612007D4E16 /* Build configuration list for PBXNativeTarget "ReclaimContentBlocker" */;
+			buildPhases = (
+				005EE14A2ECA8612007D4E16 /* Sources */,
+				005EE14B2ECA8612007D4E16 /* Frameworks */,
+				005EE14C2ECA8612007D4E16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				005EE14F2ECA8612007D4E16 /* ReclaimContentBlocker */,
+			);
+			name = ReclaimContentBlocker;
+			packageProductDependencies = (
+			);
+			productName = ReclaimContentBlocker;
+			productReference = 005EE14E2ECA8612007D4E16 /* ReclaimContentBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		00E5002F2ECC3B2E00145AF7 /* ReclaimActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E5003F2ECC3B2F00145AF7 /* Build configuration list for PBXNativeTarget "ReclaimActivityMonitor" */;
+			buildPhases = (
+				00E5002C2ECC3B2E00145AF7 /* Sources */,
+				00E5002D2ECC3B2E00145AF7 /* Frameworks */,
+				00E5002E2ECC3B2E00145AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				00E500342ECC3B2E00145AF7 /* ReclaimActivityMonitor */,
+			);
+			name = ReclaimActivityMonitor;
+			packageProductDependencies = (
+			);
+			productName = ReclaimActivityMonitor;
+			productReference = 00E500302ECC3B2E00145AF7 /* ReclaimActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +230,12 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					005EE0882EC90468007D4E16 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					005EE14D2ECA8612007D4E16 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					00E5002F2ECC3B2E00145AF7 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -100,12 +255,28 @@
 			projectRoot = "";
 			targets = (
 				005EE0882EC90468007D4E16 /* Reclaim */,
+				005EE14D2ECA8612007D4E16 /* ReclaimContentBlocker */,
+				00E5002F2ECC3B2E00145AF7 /* ReclaimActivityMonitor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		005EE0872EC90468007D4E16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		005EE14C2ECA8612007D4E16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E5002E2ECC3B2E00145AF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +293,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		005EE14A2ECA8612007D4E16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E5002C2ECC3B2E00145AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		005EE1562ECA8612007D4E16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 005EE14D2ECA8612007D4E16 /* ReclaimContentBlocker */;
+			targetProxy = 005EE1552ECA8612007D4E16 /* PBXContainerItemProxy */;
+		};
+		00E5003A2ECC3B2F00145AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E5002F2ECC3B2E00145AF7 /* ReclaimActivityMonitor */;
+			targetProxy = 00E500392ECC3B2F00145AF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		005EE0922EC9046B007D4E16 /* Debug */ = {
@@ -177,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -234,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -249,10 +447,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Reclaim/Reclaim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDWGK572XA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFamilyControlsUsageDescription = "Reclaim needs Screen Time permission to block distracting websites and apps across all browsers and applications on your device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,10 +481,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Reclaim/Reclaim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDWGK572XA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFamilyControlsUsageDescription = "Reclaim needs Screen Time permission to block distracting websites and apps across all browsers and applications on your device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +503,126 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		005EE1592ECA8612007D4E16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ReclaimContentBlocker/ReclaimContentBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDWGK572XA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReclaimContentBlocker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReclaimContentBlocker;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reclaim-app.Reclaim.ReclaimContentBlocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		005EE15A2ECA8612007D4E16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ReclaimContentBlocker/ReclaimContentBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDWGK572XA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReclaimContentBlocker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReclaimContentBlocker;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reclaim-app.Reclaim.ReclaimContentBlocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00E5003C2ECC3B2F00145AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ReclaimActivityMonitor/ReclaimActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDWGK572XA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReclaimActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReclaimActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reclaim-app.Reclaim.ReclaimActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00E5003D2ECC3B2F00145AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ReclaimActivityMonitor/ReclaimActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDWGK572XA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReclaimActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReclaimActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reclaim-app.Reclaim.ReclaimActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,6 +647,24 @@
 			buildConfigurations = (
 				005EE0952EC9046B007D4E16 /* Debug */,
 				005EE0962EC9046B007D4E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		005EE15C2ECA8612007D4E16 /* Build configuration list for PBXNativeTarget "ReclaimContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005EE1592ECA8612007D4E16 /* Debug */,
+				005EE15A2ECA8612007D4E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E5003F2ECC3B2F00145AF7 /* Build configuration list for PBXNativeTarget "ReclaimActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E5003C2ECC3B2F00145AF7 /* Debug */,
+				00E5003D2ECC3B2F00145AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
